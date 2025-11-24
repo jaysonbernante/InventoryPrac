@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrewStock - Coffee Inventory</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icons/icon-192.png">
+</head>
+<body>
+  <header>
+    <h1>☕ BrewStock</h1>
+    <button id="add-item-btn">+ Add Item</button>
+  </header>
+
+  <main id="inventory"></main>
+
+  <dialog id="edit-modal">
+    <form id="edit-form">
+      <h2 id="modal-title">Add New Item</h2>
+      <label>
+        Name<br>
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Category<br>
+        <select name="category">
+          <option value="Coffee Beans">Coffee Beans</option>
+          <option value="Milk">Milk</option>
+          <option value="Syrup">Syrup</option>
+          <option value="Cups/Lids">Cups/Lids</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <label>
+        Current Stock<br>
+        <input type="number" name="stock" min="0" step="0.01" required>
+      </label>
+      <label>
+        Unit<br>
+        <input type="text" name="unit" value="pcs" required>
+      </label>
+      <label>
+        Low Stock Alert<br>
+        <input type="number" name="lowAlert" min="0" value="10">
+      </label>
+
+      <div class="buttons">
+        <button type="submit">Save</button>
+        <button type="button" id="cancel-btn">Cancel</button>
+        <button type="button" id="delete-btn" class="danger" style="display:none">Delete</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

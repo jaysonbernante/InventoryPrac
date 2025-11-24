@@ -1,0 +1,21 @@
+{
+  "name": "BrewStock - Coffee Inventory",
+  "short_name": "BrewStock",
+  "description": "Offline coffee shop inventory for tablet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2c1b18",
+  "theme_color": "#d4a574",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
